@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>7D Lucrativa | Estrutura Digital Simplificada</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Estrutura prática e simplificada para gerar faturamento digital usando apenas celular e internet. Acesso imediato por R$29,90.">
+
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+  <!-- Facebook Pixel Code - Substitua 'YOUR_PIXEL_ID' pelo ID real fornecido anteriormente -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'YOUR_PIXEL_ID');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"
+  /></noscript>
+
+  <!-- Google Ads / Analytics Code - Substitua 'YOUR_TRACKING_ID' pelo ID real fornecido anteriormente -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'YOUR_TRACKING_ID');
+  </script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #0b0b0b;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 980px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      font-weight: 900;
+      margin-bottom: 20px;
+    }
+
+    .highlight {
+      color: #00ff9c;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 720px;
+      margin: 0 auto 40px;
+      color: #cccccc;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #00ff9c, #00c777);
+      color: #000;
+      padding: 18px 36px;
+      border-radius: 8px;
+      font-size: 20px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: 0.3s;
+      box-shadow: 0 0 30px rgba(0,255,156,0.4);
+    }
+
+    .cta-btn:hover {
+      transform: scale(1.05);
+    }
+
+    .section {
+      margin-top: 80px;
+    }
+
+    .section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background-color: #141414;
+      padding: 30px;
+      border-radius: 10px;
+      border: 1px solid #1f1f1f;
+    }
+
+    .card h3 {
+      color: #00ff9c;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #bbbbbb;
+      font-size: 15px;
+    }
+
+    .benefits li {
+      margin-bottom: 12px;
+      color: #dcdcdc;
+    }
+
+    .bonus {
+      background: linear-gradient(135deg, #101010, #161616);
+      border: 2px solid #00ff9c;
+      padding: 40px;
+      border-radius: 12px;
+      margin-top: 60px;
+    }
+
+    .price-box {
+      text-align: center;
+      margin-top: 60px;
+      padding: 40px;
+      background-color: #121212;
+      border-radius: 12px;
+    }
+
+    .price {
+      font-size: 48px;
+      font-weight: 900;
+      color: #00ff9c;
+    }
+
+    .guarantee {
+      text-align: center;
+      margin-top: 40px;
+      color: #aaaaaa;
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: #666;
+      font-size: 13px;
+    }
+
+    /* Adições para otimização e persuasão */
+    .urgency {
+      color: #ff4d4d;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .testimonial {
+      background-color: #141414;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #1f1f1f;
+    }
+
+    .testimonial p {
+      font-style: italic;
+      color: #cccccc;
+    }
+
+    .testimonial-author {
+      text-align: right;
+      font-weight: bold;
+      color: #00ff9c;
+    }
+
+    .faq {
+      margin-top: 40px;
+    }
+
+    .faq h3 {
+      color: #00ff9c;
+      margin-bottom: 10px;
+    }
+
+    .faq p {
+      color: #bbbbbb;
+    }
+
+    /* Animações sutis para engajamento */
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    .cta-btn {
+      animation: pulse 2s infinite;
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Transforme seu celular em uma <span class="highlight">máquina de faturamento digital</span> em 7 Dias!</h1>
+      <p class="urgency">Oferta limitada: Acesso por apenas R$29,90 - Preço aumenta em breve!</p>
+      <p>
+        Imagine gerar renda extra online sem complicações, usando apenas seu celular e internet. A <strong>7D Lucrativa</strong> é a estrutura comprovada que já ajudou centenas de iniciantes a faturarem seus primeiros R$1.000+ sem experiência prévia ou equipamentos caros.
+      </p>
+      <a href="https://pay.cakto.com.br/v8k65mm_672262" class="cta-btn">
+        Quero acessar a 7D Lucrativa AGORA e começar a faturar!
+      </a>
+    </div>
+  </section>
+
+  <section class="section container">
+    <h2>O que é a 7D Lucrativa?</h2>
+    <p style="text-align:center; color:#ccc;">
+      Não é curso, não é ebook e não é teoria.  
+      É uma <strong>estrutura digital organizada e executável</strong> que te leva do zero ao faturamento real em 7 dias.
+    </p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>📱 Simples e prática</h3>
+        <p>Desenvolvida para funcionar apenas com celular e internet - sem laptop ou ferramentas caras.</p>
+      </div>
+
+      <div class="card">
+        <h3>🧠 Clareza total</h3>
+        <p>Passo a passo cristalino: você sabe exatamente o que fazer, quando e como executar para ver resultados rápidos.</p>
+      </div>
+
+      <div class="card">
+        <h3>⚙️ Estrutura validada</h3>
+        <p>Modelo testado em projetos digitais reais, agora simplificado para iniciantes - resultados comprovados!</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container">
+    <h2>Para quem é essa estrutura?</h2>
+    <ul class="benefits">
+      <li>✔️ Iniciantes que querem começar do jeito certo e evitar erros comuns</li>
+      <li>✔️ Quem já tentou ganhar dinheiro online e se frustrou com métodos complicados</li>
+      <li>✔️ Pessoas ocupadas que precisam de algo direto, sem enrolação e com resultados rápidos</li>
+      <li>✔️ Quem busca organização, execução simples e liberdade financeira no digital</li>
+    </ul>
+  </section>
+
+  <section class="section container">
+    <h2>Prova Social: Veja o que nossos alunos dizem</h2>
+    <div class="testimonial">
+      <p>"Em 5 dias, faturamos R$800 com a estrutura da 7D. Simples e funciona de verdade!"</p>
+      <p class="testimonial-author">- Maria S., Empreendedora Digital</p>
+    </div>
+    <div class="testimonial">
+      <p>"Finalmente algo prático! Sem teoria chata, só execução. Recomendo para todos os iniciantes."</p>
+      <p class="testimonial-author">- João P., Afiliado Iniciante</p>
+    </div>
+    <div class="testimonial">
+      <p>"Transformou meu celular em uma fonte de renda extra. Acesso vitalício vale cada centavo!"</p>
+      <p class="testimonial-author">- Ana L., Mãe Empreendedora</p>
+    </div>
+  </section>
+
+  <section class="bonus container">
+    <h2>🎁 Bônus Exclusivos para Acelerar Seus Resultados</h2>
+    <ul class="benefits">
+      <li>🔥 Acesso à área de membros privada com templates prontos</li>
+      <li>🔥 Atualizações futuras da estrutura GRÁTIS</li>
+      <li>🔥 Conteúdos estratégicos complementares para escalar</li>
+      <li>🔥 Suporte estratégico inicial para tirar dúvidas</li>
+      <li>🔥 Guia extra: Como evitar erros comuns e maximizar lucros</li>
+    </ul>
+  </section>
+
+  <section class="price-box container">
+    <h2>Acesso Imediato - Última Chance por Esse Preço!</h2>
+    <p class="urgency">Apenas 50 vagas restantes antes do aumento para R$97!</p>
+    <p class="price">R$ 29,90</p>
+    <p style="color:#ccc;">Pagamento único • Sem mensalidades • Acesso vitalício</p>
+
+    <a href="https://pay.cakto.com.br/v8k65mm_672262" class="cta-btn">
+      Garanta seu acesso AGORA e transforme sua vida financeira!
+    </a>
+
+    <div class="guarantee">
+      Compra segura • Acesso imediato após confirmação • Garantia de 7 dias ou seu dinheiro de volta
+    </div>
+  </section>
+
+  <section class="section container faq">
+    <h2>Perguntas Frequentes</h2>
+    <div class="faq-item">
+      <h3>Preciso de experiência?</h3>
+      <p>Não! A 7D é para iniciantes absolutos.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Quanto tempo preciso dedicar?</h3>
+      <p>Apenas 30-60 minutos por dia para ver resultados.</p>
+    </div>
+    <div class="faq-item">
+      <h3>E se não funcionar para mim?</h3>
+      <p>Garantia de 7 dias: reembolso total sem perguntas.</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 • Todos os direitos reservados  
+    <br>
+    Este produto não garante resultados. Os resultados dependem da aplicação da estrutura.
+  </footer>
+
+</body>
+</html>
