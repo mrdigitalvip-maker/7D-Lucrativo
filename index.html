@@ -7,7 +7,6 @@
 <title>Academia Algoritmo Global</title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <style>
@@ -61,6 +60,7 @@ background:#ffcc00;
 border:none;
 border-radius:6px;
 font-weight:bold;
+cursor:pointer;
 }
 
 #app{
@@ -145,6 +145,11 @@ border-radius:10px;
 text-align:center;
 }
 
+.ai i{
+margin-bottom:10px;
+color:#ffcc00;
+}
+
 </style>
 </head>
 
@@ -155,7 +160,6 @@ text-align:center;
 <div class="login-box">
 
 <h2>Área Premium</h2>
-
 <p>Entre com sua senha de aluno</p>
 
 <input type="password" id="senha" placeholder="Senha">
@@ -195,11 +199,9 @@ Aprenda algoritmo, viralização e crescimento digital.
 </div>
 
 <h2 style="margin-top:40px">Capítulos</h2>
-
 <div class="chapters" id="chapters"></div>
 
-<h2 style="margin-top:50px">Gráficos de crescimento</h2>
-
+<h2 style="margin-top:50px">Gráfico de crescimento</h2>
 <canvas id="chart1"></canvas>
 
 <h2 style="margin-top:50px">Galeria de conteúdos virais</h2>
@@ -242,7 +244,7 @@ function login(){
 
 const s=document.getElementById("senha").value
 
-if(s==="ALUNO2026"){
+if(s==="acessoVIP2026"){
 
 document.getElementById("login").style.display="none"
 document.getElementById("app").style.display="block"
@@ -251,7 +253,7 @@ init()
 
 }else{
 
-alert("senha incorreta")
+alert("Senha incorreta")
 
 }
 
@@ -285,7 +287,7 @@ function complete(i){
 
 const chapters=document.querySelectorAll(".chapter")
 
-if(chapters[i-1].classList.contains("locked"))return
+if(chapters[i-1].classList.contains("locked")) return
 
 if(!chapters[i-1].classList.contains("done")){
 
@@ -296,7 +298,6 @@ completed++
 document.getElementById("done").innerText=completed+" / "+total
 
 let progress=(completed/total)*100
-
 document.getElementById("progress").style.width=progress+"%"
 
 }
@@ -312,17 +313,21 @@ new Chart(document.getElementById("chart1"),{
 type:"line",
 
 data:{
-
 labels:["Post 1","Post 2","Post 3","Post 4","Post 5"],
-
 datasets:[{
-
 label:"Alcance",
-
-data:[100,500,2000,8000,25000]
-
+data:[100,500,2000,8000,25000],
+borderColor:"#ffcc00",
+backgroundColor:"rgba(255,204,0,0.2)",
+tension:0.4
 }]
+},
 
+options:{
+responsive:true,
+plugins:{
+legend:{display:true}
+}
 }
 
 })
