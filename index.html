@@ -1,295 +1,382 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>7D Lucrativa | Ganhe Dinheiro Online Agora</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Estrutura explosiva para faturar digitalmente com celular e internet. Acesso imediato por R$29,90 - Oferta limitada!">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Algoritmo, Alcance Global e Crescimento nas Redes</title>
 
-  <!-- Fonte -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+<style>
 
-  <!-- Facebook Pixel Code - Substitua 'YOUR_PIXEL_ID' pelo ID real fornecido anteriormente -->
-  <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', 'YOUR_PIXEL_ID');
-    fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"
-  /></noscript>
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#0b0b0b;
+color:white;
+overflow-x:hidden;
+}
 
-  <!-- Google Ads / Analytics Code - Substitua 'YOUR_TRACKING_ID' pelo ID real fornecido anteriormente -->
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'YOUR_TRACKING_ID');
-  </script>
+header{
+text-align:center;
+padding:80px 20px;
+background:linear-gradient(black,#111);
+}
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #0b0b0b;
-      color: #ffffff;
-      line-height: 1.4;
-    }
+h1{
+font-size:42px;
+margin-bottom:10px;
+}
 
-    .container {
-      max-width: 980px;
-      margin: auto;
-      padding: 20px;
-    }
+.container{
+max-width:1100px;
+margin:auto;
+padding:30px;
+}
 
-    .hero {
-      text-align: center;
-      padding: 40px 20px;
-    }
+.chapter{
+background:#141414;
+border-radius:10px;
+padding:25px;
+margin:30px 0;
+opacity:0;
+transform:translateY(40px);
+transition:all .6s ease;
+}
 
-    .hero h1 {
-      font-size: 36px;
-      font-weight: 900;
-      margin-bottom: 10px;
-    }
+.chapter.show{
+opacity:1;
+transform:translateY(0);
+}
 
-    .highlight {
-      color: #ff0000;
-    }
+.chapter h2{
+color:#ffd700;
+}
 
-    .hero p {
-      font-size: 16px;
-      max-width: 720px;
-      margin: 0 auto 20px;
-      color: #cccccc;
-    }
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
 
-    .cta-btn {
-      display: inline-block;
-      background: linear-gradient(135deg, #ff0000, #c70000);
-      color: #fff;
-      padding: 14px 28px;
-      border-radius: 6px;
-      font-size: 18px;
-      font-weight: 700;
-      text-decoration: none;
-      transition: 0.3s;
-      box-shadow: 0 0 20px rgba(255,0,0,0.4);
-    }
+.card{
+background:#1c1c1c;
+padding:20px;
+border-radius:8px;
+}
 
-    .cta-btn:hover {
-      transform: scale(1.05);
-    }
+.btn{
+background:#ffd700;
+color:black;
+padding:12px 25px;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+display:inline-block;
+margin-top:15px;
+}
 
-    .section {
-      margin-top: 40px;
-    }
+.graph{
+height:220px;
+background:linear-gradient(180deg,#1a1a1a,#0f0f0f);
+border-radius:10px;
+position:relative;
+overflow:hidden;
+}
 
-    .section h2 {
-      font-size: 28px;
-      margin-bottom: 10px;
-      text-align: center;
-    }
+.bar{
+position:absolute;
+bottom:0;
+width:40px;
+background:#ffd700;
+animation:grow 2s ease forwards;
+}
 
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 15px;
-      margin-top: 20px;
-    }
+.bar:nth-child(1){left:30px;height:30%;}
+.bar:nth-child(2){left:90px;height:50%;}
+.bar:nth-child(3){left:150px;height:70%;}
+.bar:nth-child(4){left:210px;height:90%;}
+.bar:nth-child(5){left:270px;height:100%;}
 
-    .card {
-      background-color: #141414;
-      padding: 20px;
-      border-radius: 8px;
-      border: 1px solid #1f1f1f;
-    }
+@keyframes grow{
+from{height:0}
+}
 
-    .card h3 {
-      color: #ff0000;
-      margin-bottom: 5px;
-    }
+.lock-screen{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:black;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+z-index:999;
+}
 
-    .card p {
-      color: #bbbbbb;
-      font-size: 14px;
-    }
+input{
+padding:10px;
+border-radius:6px;
+border:none;
+margin-top:10px;
+}
 
-    .benefits li {
-      margin-bottom: 8px;
-      color: #dcdcdc;
-    }
+button{
+padding:10px 20px;
+margin-top:10px;
+border:none;
+background:#ffd700;
+font-weight:bold;
+border-radius:6px;
+cursor:pointer;
+}
 
-    .bonus {
-      background: linear-gradient(135deg, #101010, #161616);
-      border: 2px solid #ff0000;
-      padding: 20px;
-      border-radius: 10px;
-      margin-top: 30px;
-    }
+footer{
+text-align:center;
+padding:40px;
+background:#050505;
+margin-top:60px;
+}
 
-    .price-box {
-      text-align: center;
-      margin-top: 30px;
-      padding: 20px;
-      background-color: #121212;
-      border-radius: 10px;
-    }
-
-    .price {
-      font-size: 42px;
-      font-weight: 900;
-      color: #ff0000;
-    }
-
-    .guarantee {
-      text-align: center;
-      margin-top: 20px;
-      color: #aaaaaa;
-      font-size: 13px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #666;
-      font-size: 12px;
-    }
-
-    .urgency {
-      color: #ffff00;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-    /* Carousel */
-    .carousel-container {
-      overflow-x: auto;
-      display: flex;
-      gap: 10px;
-      margin: 20px 0;
-      padding-bottom: 10px;
-    }
-
-    .carousel-item {
-      flex: 0 0 auto;
-      width: 300px;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 8px;
-    }
-
-    /* Animações */
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.05); }
-      100% { transform: scale(1); }
-    }
-
-    .cta-btn {
-      animation: pulse 1.5s infinite;
-    }
-  </style>
+</style>
 </head>
 
 <body>
 
-  <section class="hero">
-    <div class="container">
-      <h1>PARE DE PERDER TEMPO! <span class="highlight">FATURAR ONLINE AGORA COM CELULAR</span></h1>
-      <p class="urgency">OFERTA RELÂMPAGO: R$29,90 - ACABA EM 24H! APENAS 20 VAGAS!</p>
-      <p>
-        CHEGA DE FRUSTRAÇÃO! A 7D LUC RATIVA EXPLODE SEU FATURAMENTO DIGITAL SEM BOBAGEM. GANHE R$1K+ EM DIAS SEM EXPERIÊNCIA!
-      </p>
-      <a href="https://pay.cakto.com.br/v8k65mm_672262" class="cta-btn">
-        COMPRAR AGORA E FATURAR HOJE!
-      </a>
-    </div>
-  </section>
+<div class="lock-screen" id="lock">
 
-  <section class="section container">
-    <h2>O QUE É ESSA MÁQUINA DE DINHEIRO?</h2>
-    <p style="text-align:center; color:#ccc;">
-      NÃO É LIXO TEÓRICO! É ESTRUTURA PODEROSA PARA EXECUÇÃO IMEDIATA E LUCROS RÁPIDOS.
-    </p>
+<h2>Área exclusiva para alunos</h2>
+<p>Digite a senha de acesso</p>
 
-    <div class="cards">
-      <div class="card">
-        <h3>📱 CELULAR BASTA!</h3>
-        <p>OPERA TUDO COM CELULAR E INTERNET - SEM GASTOS EXTRAS!</p>
-      </div>
+<input id="senha" placeholder="Senha">
 
-      <div class="card">
-        <h3>🧠 AÇÃO DIRETA!</h3>
-        <p>PASSOS CLAROS: FAÇA ISSO AGORA E VEJA DINHEIRO ENTRAR!</p>
-      </div>
+<button onclick="desbloquear()">Entrar</button>
 
-      <div class="card">
-        <h3>⚙️ COMPROVADO!</h3>
-        <p>MODELO QUE FATURA MILHARES - AGORA SEU POR POUCO!</p>
-      </div>
-    </div>
-  </section>
+</div>
 
-  <section class="section container">
-    <h2>PARA QUEM QUER DINHEIRO RÁPIDO!</h2>
-    <ul class="benefits">
-      <li>✔️ INICIANTE? DOMINE O DIGITAL HOJE!</li>
-      <li>✔️ FRUSTRADO? ACABE COM ERROS E GANHE!</li>
-      <li>✔️ OCUPADO? RESULTADOS EM MINUTOS POR DIA!</li>
-      <li>✔️ AMBICIOSO? ESCALE PARA MILHARES!</li>
-    </ul>
-  </section>
+<header>
 
-  <section class="section container">
-    <h2>VEJA COMO EXPLODE SEU FATURAMENTO</h2>
-    <div class="carousel-container">
-      <img src="https://fileroom.com/hs-fs/hubfs/Fileroom/2020/Content/Blog/November/What%20is%20a%20Marketing%20Funnel%20and%20Why%20Should%20You%20Care/Sales%20%26%20Marketing%20Funnel.png?width=2550&name=Sales%20%26%20Marketing%20Funnel.png" alt="Funil de Vendas 1" class="carousel-item">
-      <img src="https://lirp.cdn-website.com/53d6ba3a/dms3rep/multi/opt/digital-marketing-funnel-infographic-winning-new-customers-with-marketing-strategies_977617-102341-1920w.png" alt="Funil de Vendas 2" class="carousel-item">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/The_Purchase_Funnel.jpg" alt="Funil de Vendas 3" class="carousel-item">
-    </div>
-  </section>
+<h1>Algoritmo e Alcance Global</h1>
 
-  <section class="bonus container">
-    <h2>🎁 BÔNUS PARA DETONAR!</h2>
-    <ul class="benefits">
-      <li>🔥 ÁREA PRIVADA COM TEMPLATES MATADORES!</li>
-      <li>🔥 ATUALIZAÇÕES GRÁTIS PARA SEMPRE!</li>
-      <li>🔥 ESTRATÉGIAS SECRETAS PARA ESCALAR!</li>
-      <li>🔥 SUPORTE PARA DECOLAR RÁPIDO!</li>
-      <li>🔥 GUIA ANTI-ERROS PARA LUCROS MÁXIMOS!</li>
-    </ul>
-  </section>
+<p>Guia completo para crescer nas redes sociais e entender como o algoritmo realmente funciona.</p>
 
-  <section class="price-box container">
-    <h2>PEGUE AGORA ANTES QUE ACABE!</h2>
-    <p class="urgency">SÓ HOJE: R$29,90 - AMANHÃ R$97!</p>
-    <p class="price">R$ 29,90</p>
-    <p style="color:#ccc;">ÚNICO PAGAMENTO • ACESSO ETERNO</p>
+</header>
 
-    <a href="https://pay.cakto.com.br/v8k65mm_672262" class="cta-btn">
-      COMPRAR E FATURAR IMEDIATAMENTE!
-    </a>
+<div class="container">
 
-    <div class="guarantee">
-      SEGURA • ACESSO INSTANTÂNEO • 7 DIAS GARANTIA OU DINHEIRO DE VOLTA!
-    </div>
-  </section>
+<div class="chapter">
 
-  <footer>
-    © 2026 • DIREITOS RESERVADOS  
-    <br>
-    RESULTADOS DEPENDEM DA SUA AÇÃO - MAS FUNCIONA!
-  </footer>
+<h2>Capítulo 1 — Introdução</h2>
+
+<p>
+As redes sociais são controladas por algoritmos inteligentes que analisam o comportamento dos usuários.
+Quando você entende como esses sistemas funcionam, pode aumentar drasticamente o alcance do seu conteúdo.
+</p>
+
+</div>
+
+<div class="chapter">
+
+<h2>Capítulo 2 — O que é Algoritmo</h2>
+
+<p>
+O algoritmo é um sistema que decide quais conteúdos devem aparecer para cada pessoa com base em relevância.
+</p>
+
+</div>
+
+<div class="chapter">
+
+<h2>Capítulo 3 — Métricas analisadas</h2>
+
+<div class="grid">
+
+<div class="card">Curtidas</div>
+<div class="card">Comentários</div>
+<div class="card">Compartilhamentos</div>
+<div class="card">Tempo de visualização</div>
+
+</div>
+
+</div>
+
+<div class="chapter">
+
+<h2>Capítulo 4 — Teste inicial do conteúdo</h2>
+
+<p>
+Todo conteúdo passa por um teste inicial antes de ser entregue para grandes audiências.
+</p>
+
+<div class="graph">
+
+<div class="bar"></div>
+<div class="bar"></div>
+<div class="bar"></div>
+<div class="bar"></div>
+<div class="bar"></div>
+
+</div>
+
+</div>
+
+<div class="chapter">
+<h2>Capítulo 5 — Engajamento</h2>
+<p>Quanto maior o engajamento, maior o alcance.</p>
+</div>
+
+<div class="chapter">
+<h2>Capítulo 6 — Retenção</h2>
+<p>Conteúdos que mantêm atenção são priorizados pelo algoritmo.</p>
+</div>
+
+<div class="chapter">
+<h2>Capítulo 7 — Conteúdo viral</h2>
+<p>Conteúdos curtos, impactantes e visuais tendem a viralizar.</p>
+</div>
+
+<div class="chapter">
+<h2>Capítulo 8 — Identidade visual</h2>
+<p>Perfis com identidade visual forte são mais lembrados.</p>
+</div>
+
+<div class="chapter">
+<h2>Capítulo 9 — Frequência de postagem</h2>
+<p>Postar com consistência mantém o perfil ativo no algoritmo.</p>
+</div>
+
+<div class="chapter">
+<h2>Capítulo 10 — Hashtags</h2>
+<p>Hashtags ajudam o algoritmo a entender o tema do conteúdo.</p>
+</div>
+
+<div class="chapter">
+<h2>Capítulo 11 — Conteúdo global</h2>
+<p>Conteúdos universais podem alcançar pessoas em vários países.</p>
+</div>
+
+<div class="chapter">
+<h2>Capítulo 12 — Psicologia do engajamento</h2>
+<p>Curiosidade e emoção aumentam a interação.</p>
+</div>
+
+<div class="chapter">
+<h2>Capítulo 13 — Estratégia de crescimento</h2>
+<p>Publicar, analisar dados e melhorar continuamente.</p>
+</div>
+
+<div class="chapter">
+<h2>Capítulo 14 — Nicho</h2>
+<p>Perfis focados crescem mais rápido.</p>
+</div>
+
+<div class="chapter">
+<h2>Capítulo 15 — Storytelling</h2>
+<p>Histórias prendem atenção e geram conexão.</p>
+</div>
+
+<div class="chapter">
+<h2>Capítulo 16 — Conteúdo educativo</h2>
+<p>Ensinar algo aumenta valor percebido.</p>
+</div>
+
+<div class="chapter">
+<h2>Capítulo 17 — Conteúdo visual</h2>
+<p>Imagens fortes aumentam retenção.</p>
+</div>
+
+<div class="chapter">
+<h2>Capítulo 18 — Análise de dados</h2>
+<p>Analisar métricas é essencial para melhorar.</p>
+</div>
+
+<div class="chapter">
+<h2>Capítulo 19 — Automação</h2>
+<p>Ferramentas podem ajudar a programar conteúdos.</p>
+</div>
+
+<div class="chapter">
+<h2>Capítulo 20 — Inteligência Artificial</h2>
+<p>IA pode gerar ideias e acelerar produção de conteúdo.</p>
+</div>
+
+<div class="chapter">
+<h2>Capítulo 21 — Monetização</h2>
+<p>Seguidores podem ser convertidos em renda.</p>
+</div>
+
+<div class="chapter">
+<h2>Capítulo 22 — Produtos digitais</h2>
+<p>Venda conhecimento através de cursos e guias.</p>
+</div>
+
+<div class="chapter">
+<h2>Capítulo 23 — Comunidade</h2>
+<p>Comunidades criam audiência fiel.</p>
+</div>
+
+<div class="chapter">
+<h2>Capítulo 24 — Estratégia de longo prazo</h2>
+<p>Crescimento sustentável leva tempo.</p>
+</div>
+
+<div class="chapter">
+
+<h2>Capítulo 25 — Conclusão</h2>
+
+<p>
+Agora você entende como funciona o algoritmo, como aumentar o alcance e como transformar seguidores em oportunidades.
+</p>
+
+<a class="btn" href="#">Baixar versão PDF</a>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>Conteúdo educacional sobre crescimento digital</p>
+
+</footer>
+
+<script>
+
+const chapters=document.querySelectorAll(".chapter")
+
+window.addEventListener("scroll",()=>{
+
+const trigger=window.innerHeight*0.85
+
+chapters.forEach(ch=>{
+
+const top=ch.getBoundingClientRect().top
+
+if(top<trigger){
+ch.classList.add("show")
+}
+
+})
+
+})
+
+function desbloquear(){
+
+let senha=document.getElementById("senha").value
+
+if(senha==="ACESSO2026"){
+
+document.getElementById("lock").style.display="none"
+
+}else{
+
+alert("Senha incorreta")
+
+}
+
+}
+
+</script>
 
 </body>
 </html>
